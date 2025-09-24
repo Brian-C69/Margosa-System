@@ -1,0 +1,76 @@
+MODEL
+
+Resident
+    private int rid;
+    private int fid;
+    private int hid;
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private String email;
+    private String phoneNum;
+    private String username;
+    private String password;
+    private Date birthday;
+    private boolean approved;
+
+House
+    private int hid;
+    private int fid;
+    private String houseNum;
+    private String houseStreet; 
+
+Family
+    private int fid;
+    private int hid;
+    private String familyName;
+    private String familyPin;
+    private List<House> house;
+    private List<Resident> residents;
+    private List<Car> cars;
+    private List<Visitor> visitor;
+
+Visitor
+    private int vid;
+    private int fid;
+    private String visitorName;
+    private String visitorPhoneNum;
+    private String visitorVehicleNum;
+    private Date visitorEntryDate;
+    private Time visitorEntryTime;
+    private Date visitorExitDate;
+    private Time visitorExitTime;
+    private Date visitorAddedDate;
+    private Time visitorAddedTime;
+
+Car
+    private int cid;
+    private int fid;
+    private String carBrand;
+    private String carModel;
+    private String carColor;
+    private String carPlateNum;
+    private String carType;
+
+Admin
+    private int aid;
+    private String username;
+    private String password;
+    private String name;
+
+Committee
+    private int comid;
+    private String username;
+    private String password;
+    private String name;
+    private String email;
+    private String phoneNum;
+    private String role;
+
+Guard
+    private int gid;
+    private String username;
+    private String password;
+    private String name;
+    private String email;
+    private String phoneNum;
